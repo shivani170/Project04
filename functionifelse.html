@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+function myfunction()
+{//get the value of input field with id="numb"
+
+var val= document.getElementById("numb").value
+//get the element with demo
+alert(val)
+var  elem = document.getElementById("demo")
+    if (val == "" || isNaN(val)) {
+elem.innerHTML = "Not a Number";
+    } else {
+elem.innerHTML = "Input OK";
+    }
+
+}
+</script>
+</head>
+
+<body>
+<p>Please input a number</p>
+<input id="numb" type="text">
+<button type="button" onClick="myfunction()">Click me</button>
+<p id ="demo">This is how it behave</p>
+
+</body>
+</html>

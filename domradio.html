@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+
+
+function fn2()
+{
+	var rd1=document.getElementById("rd1")
+	var rd2=document.getElementById("rd2")
+	var rd3=document.getElementById("rd3")
+	var rd4=document.getElementById("rd4")
+	if(rd1.checked==true)
+	alert("Your answer is :"+rd1.value)
+	else if(rd2.checked==true)
+	alert("Your answer is :"+rd2.value)
+	else if(rd3.checked==true)
+	alert("Your answer is :"+rd3.value)
+	else if(rd4.checked==true)
+	alert("Your answer is :"+rd4.value)
+	
+	else
+	alert("No religion is to be choosen")
+	}
+</script>
+</head>
+<body>
+<input id="rd1" name="grp1" type="radio" value="Hindu">Hindu</input> <br>
+<input id="rd2" name="grp1" type="radio" value="Muslim">Muslim</input> <br>
+
+
+<input id="rd3" name="grp1" type="radio" value="sikh">Sik</input>h<br>
+
+
+<input id="rd4" name="grp1" type="radio" value="christian">Christian</input> <br>
+<button onclick="fn2" id="btn1">Click me</button>
+
+
+</body>
+</html>

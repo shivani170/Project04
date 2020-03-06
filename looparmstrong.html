@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+var n=153
+var i=0
+var j=0
+k=n
+while( n>0)
+{
+	i=n%10;
+	j=j+(i*i*i)
+	n=Math.floor(n/10);
+	}
+	
+	if(k==j)
+	{
+		document.write("this is an armsrrong no.")
+	
+		}
+		else
+		{
+		document.write("it is not an armstrong")
+		}
+	document.write(j)
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+
+document.write(Number.MAX_VALUE)
+document.write("<br>")
+document.write(Number.MIN_VALUE)
+document.write("<br>")
+document.write(Number.NaN)
+document.write("<br>")
+
+//prompt ("What's Your age?")
+ votable=(age<18)?"too young":"Old enough"
+document.write(votable)
+document.write("<br>")
+
+
+
+function message()
+{
+try{
+	addlert("Welcome guest")}
+catch(err){
+var txt="there was error on this page.\n\n"
+txt+="Error description:"+err.message+"\n\n"
+txt+="Click OK to continue.\n\n"
+        alert(txt);
+}
+}
+</script>
+<input type="button" value="View message" onclick="message()">
+
+
+</body>
+</html>

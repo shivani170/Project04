@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+function setnewImage()
+{
+	document.getElementById("img1").src="efg.jpg"
+	}
+function setoldImage()
+{
+	document.getElementById("img1").src="abc.jpg"
+	}
+</script>
+</head>
+
+<body>
+<img id="img1" onMouseOver="setnewImage()"  onMouseOut="setoldImage()" src="abc.jpg" width="300">
+
+<button onClick="this.innerHTML=Date() ">the time is?</button>
+<button onClick="myfunction()" onMouseOver="demo">The time is?</button>
+</body>
+</html>

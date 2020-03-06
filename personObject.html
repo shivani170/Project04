@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+
+</head>
+
+<body>
+<p id="demo"></p>
+<script>
+var person = {
+    firstName : "John",
+    lastName  : "Doe",
+	fullName  : "John Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+
+	document.getElementById("demo").innerHTML=person.firstName +" "+ person.lastName
++"<br> age is "+person.age+"<br> Eye color is " +person.eyeColor +" the color of he eye is so beautifull <br>"
+document.getElementById("demo").innerHTML="Name="+person.fullName
+var txt="hello world. World is full of increadable things"
+
+
+var sln=txt.fontcolor("red")
+var sln=txt.fixed()
+var sln=txt.length
+var sln=txt.indexOf("locate")
+document.write(sln+"<br>")
+
+
+var text="hello delhi"
+var text1=text.toUpperCase()
+document.write(text1)
+
+var text2= "<br> This is the Capital of INDIA"
+var  str=text2.toLowerCase()
+document.write(str+"<br>")
+
+var hlp="a,b,c,d,e"   //string
+z= hlp.split("|")
+
+
+document.write(z)
+
+</script>
+</body>
+</html>

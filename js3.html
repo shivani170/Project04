@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+document.write("1.  ")
+var x = 123
+document.write(typeof(x));                  //1.return number
+document.write("<br>2.  ")
+
+var y = "newnumber(123)"
+document.write(typeof (y));                 //2.return string
+document.write("<br>3.  ")
+
+var n=234
+var m=n.prototype                          //3.UNDEFINED........
+document.write(m)
+document.write("<br>4.")
+
+var n1 =154,n2=153,n3=278
+var ans1=Math.max(n1,n2,n3)
+document.write(ans1  )                       //4. 278
+
+                                               
+document.write("<br>5.  ")
+
+var n1 =154,n2=153,n3=278
+var ans2=Math.min(n1,n2,n3)
+document.write(ans2)                       //5. 153
+
+                                                
+
+var y=6785
+var i= y.toExponential(5)                      //6.78500e+3
+document.write(i)
+document.write("<br>5.  ")
+
+
+  var y=9877
+  var j=y.toPrecision(3)                       //9.88e+3
+  document.write(j)          
+document.write("<br>6.  ")
+
+
+var y= 765
+var k = y.constructor(y)                      //........
+document.write(k)
+document.write("<br>7.  ")
+
+var y= 324
+var k = y.toFixed(3)                           //somehow same like precession
+document.write(k)
+document.write("<br>8.  ")
+
+var y= 765
+var k = y.toSource()                            //??????
+document.write(k)
+document.write("<br>9.  ")
+
+
+var y= 765
+var k = y.constructor(y)
+document.write(k)
+document.write("<br>10.  ")
+
+</script>
+</body>
+</html>

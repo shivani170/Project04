@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>onload</title>
+<script>
+var txt=" "
+function message()
+{
+	try{
+	alert("welcome guest")
+	}
+	catch (err)
+	{  txt="There was an error on this page.\n\n"
+  txt+="Error description: " + err.description + "\n\n"
+  txt+="Click OK to continue.\n\n"
+  alert(txt)
+    if(!confirm(txt))
+    {
+document.location.href="http://www.w3schools.com/"
+    }
+else
+{	
+document.location.href="http://www.inxinfotech.com/"
+}
+
+
+		
+}
+}
+</script>
+</head>
+
+<body>
+<input type="button" value="view message" onClick="message()">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+function fn1()
+{var rd1=document.getElementById("rd1")
+var rd2=document.getElementById("rd2")
+if(rd1.checked==true)
+	{
+		alert("rd1 is checked :"+rd1.value)
+	}
+	else  {
+		alert("rd2 is cheked: "+rd2.value)
+		}
+		
+}
+</script>
+</head>
+
+<body>
+
+<input id="rd1" name="grp1" type="radio" value="Chandigarh">Chandigarh
+<br>
+<input id="rd2" name="grp1" type="radio" value="Panchkula">Panchkula
+<br><br>
+<button onclick="fn1()">Click me</button>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+function myfunction(){
+var mess =document.getElementById("mess")
+mess.innerHTML=""
+try{ 
+        var x = document.getElementById("demo").value;
+        if(x == "") throw "Empty";
+        if(isNaN(x)) throw "Not a number";
+        if(x > 10) throw "Too high";
+        if(x < 5) throw "Too low";
+    }
+    catch(err) {
+        mess.innerHTML = "Error: " + err + ".";
+    }
+}
+
+
+
+var str = "Visit inxinfotech";
+var n = str.search(/inxinfotech/i);           //Using String search(), With a Regular Expression
+
+	document.write(n)
+	document.write("<br>")
+	var str = "Visit inxinfotech";
+var n = str.search("inxinfotech");           //Using String search(), With a Regular Expression
+
+	document.write(n)
+	
+	
+</script>
+
+</head>
+
+<body>
+<p>Please input a number between 5 and 10:</p>
+<input id="demo" type="text">
+<button type="button" onclick="myfunction()">Test Input</button>
+<p id="mess"></p>
+
+
+
+</body>
+</html>
